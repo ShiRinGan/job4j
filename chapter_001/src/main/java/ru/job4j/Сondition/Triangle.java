@@ -7,11 +7,10 @@ public class Triangle {
         boolean op3 = (ab+bc)>ac;
         boolean result = true;
                 if (op1&&op2&&op3) {
-                    System.out.println("Это треугольник");}
-                    else{
-                        System.out.println("Неа");
-                    }
-         return result;
+                    return true;}
+                    else {
+                    return false;
+                }
         }
     }
 
