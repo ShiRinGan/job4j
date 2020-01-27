@@ -9,7 +9,7 @@ public class Triangle {
                 if (op1&&op2&&op3) {
                     return true;}
                     else {
-                    return false;
+                    return (op1&&op2&&op3);
                 }
         }
     }
