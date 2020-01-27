@@ -13,7 +13,7 @@ public class SqMaxTest {
     @Test
     public void foundMax() {
         SqMax check = new SqMax();
-        int result = check.max(1000, 100, 10, 1);
-        assertThat(result, is(1000));
+        int result = check.max(10, 20, 30, 40);
+        assertThat(result, is(40));
     }
 }
