@@ -2,21 +2,18 @@ package ru.job4j.Сondition;
 
 public class SqMax {
     public static int max(int first, int second, int third, int forth) {
-        int result = forth;
-        if (first > second) {
-            if (first > third) {
-                if (first > forth) {
+        int result;
+        if ((first > second)&&(first > third)&&(first > forth)) {
                     result = first;
                 }
-            }
-        } else if (second > third) {
-            if (second > forth) {
+                else if ((second > third)&&(second > forth)) {
                 result = second;
             }
-        } else if (third > forth) {
+                else if (third>forth){
             result = third;
         }
-
+                else
+                    return forth;
         return result;
     }
 }
