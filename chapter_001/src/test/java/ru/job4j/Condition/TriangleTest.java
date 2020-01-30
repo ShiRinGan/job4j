@@ -13,3 +13,4 @@ public class TriangleTest {
         assertThat(result, is(true));
     }
 }
+
