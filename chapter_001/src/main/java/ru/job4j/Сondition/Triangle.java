@@ -5,10 +5,6 @@ public class Triangle {
         boolean op1 = (ab + ac) > bc;
         boolean op2 = (ac + bc) > ab;
         boolean op3 = (ab + bc) > ac;
-        if (op1 && op2 && op3) {
-            return true;
-        } else {
-            return false;
-        }
+        return (op1 && op2 && op3);
     }
 }
