@@ -29,3 +29,4 @@ public class PrimeNumberTest {
         assertThat(count, is(1));
     }
 }
+
