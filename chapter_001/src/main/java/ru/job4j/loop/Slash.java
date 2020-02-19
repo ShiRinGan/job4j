@@ -5,7 +5,7 @@ public class Slash {
         for (int row = 0; row < size; row++) {
             for (int cell = 0; cell < size; cell++) {
                 boolean left = ((cell + row) % 2 == 0); // добавить условие, по которому нужно определить ставить ли символ или нет.
-                boolean right = ((cell + row) % 2 == 0); // добавить условие, что нужно ставить элемент в правый угол.
+                boolean right = ((cell+row) % 2 == 0); // добавить условие, что нужно ставить элемент в правый угол.
                 if (left) {
                     System.out.print("0");
                 } else if (right) {
