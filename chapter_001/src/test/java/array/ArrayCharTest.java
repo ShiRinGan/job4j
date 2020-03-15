@@ -23,4 +23,3 @@ public class ArrayCharTest {
         assertThat(result, is(false));
     }
 }
-
