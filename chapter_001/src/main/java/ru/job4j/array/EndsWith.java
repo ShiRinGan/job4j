@@ -1,17 +1,36 @@
 package ru.job4j.array;
 
 public class EndsWith {
+    // Создадим класс, в котором будет определяться истенность значения
+    //слово привет будет являться массивом из последовательности букв
+    //создаем 2 значения: слово целиком и последние буквы (для проверки берем 2 последние буквы)
+
     public static boolean endsWith(char[] word, char[] post) {
-        boolean result = true;
+        boolean result = true;//тут вывод, если слово написано правильно
+        //создадим индекс для определения последнего символа в post
+        //так как слово hello состоит из 5 ячеек, а массивы начинаются с ячейки [0]
+        //ставится дополнительно -1, дабы избежать ошибки (длинна слова значения не играет)
         int lastPost = post.length - 1;
+
+        //создадим индекс для определения последнего символа в word
+        //аналогично с post
         int lastWord = word.length - 1;
-        for (int i = 0; i < lastPost-1; i++){
-            if (lastWord[i] != lastPost[i]){
-               lastPost --;
-               lastWord --;
-                result = false;
+
+        //проверяем количество символов равное длине post
+        for (int i = 0; i < post.length-1; i++){
+            if (word[lastWord] != post[lastPost]){
+              // первым проверяется самая последнее значение массива (буква)
+                // если она не совподает, то значение ложное и производим выход из цикла
+               result = false;
                break;
             }
+            else {// проверяем предпоследнее значение в массиве и тут все аналогично
+                if (word[lastWord-1] != post[lastPost - 1]){
+                    result = false;
+                    break;
+                }
+            }
+
         }
         return result;
     }
