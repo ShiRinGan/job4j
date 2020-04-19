@@ -2,17 +2,17 @@ package ru.job4j.array;
 
 public class SortSelected {
     public static int[] sort(int[] data) {
-        int min = MinDiapason.findMin(data, 0, data.length);
-        int index = FindLoop.indexOf(data, min, 0, data.length);
-        for (int i = 0; i<index; i++){
-            if (index<min){
-                min=index;
-                for (index=0; index<data.length; index++){
-                    int temp = data[index];
-                    data[index] = data[data.length - 1];
-                    data[data.length-1] = temp;
+        for (int min = 0; min < data.length - 1; min++) {
+            int least = min;
+            for (int j = min + 1; j < data.length; j++) {
+                if (data[j] < data[least]) {
+                    least = j;
                 }
             }
+            int tmp = data[min];
+            data[min] = data[least];
+            data[least] = tmp;
         }
-                return data;
-    }}
+
+    return data;
+}}
