@@ -2,14 +2,15 @@ package ru.job4j.calculator;
 
 /**
  * Class Класс для вычисления арифметических операций + - * / ^.
+ *
  * @author Филипп
  * @version 1.0
  * @since 17.01.2020
- *
  */
-public class calculator {
+public class Calculator {
     /**
      * Сложение
+     *
      * @param first
      * @param second
      * @return результат
@@ -21,6 +22,7 @@ public class calculator {
 
     /**
      * Деление
+     *
      * @param first
      * @param second
      * @return результат
@@ -32,6 +34,7 @@ public class calculator {
 
     /**
      * Умножение
+     *
      * @param first
      * @param second
      * @return вывод на экран результата
@@ -43,6 +46,7 @@ public class calculator {
 
     /**
      * Вычитание
+     *
      * @param first
      * @param second
      * @return результат
@@ -54,6 +58,7 @@ public class calculator {
 
     /**
      * Объявление значения переменным
+     *
      * @param args
      */
     public static void main(String[] args) {
