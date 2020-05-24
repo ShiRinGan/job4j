@@ -7,8 +7,7 @@ public class Jukebox {
         }
         if (position == 2) {
             System.out.println("Спокойной ночи");
-        }
-        if (position >= 3) {
+        } else if (position >= 3) {
             System.out.println("Песня не найдена");
         }
     }
