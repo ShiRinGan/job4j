@@ -13,3 +13,4 @@ public class PointTest {
         Assert.assertEquals(expected, out, 0.01);
     }
 }
+
