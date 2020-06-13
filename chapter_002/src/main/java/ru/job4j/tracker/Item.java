@@ -9,5 +9,7 @@ public class Item {
 
     public static void main(String[] args) {
         Item item = new Item();
+        Item onlyName = new Item();
+        Item onlyId = new Item();
     }
 }
