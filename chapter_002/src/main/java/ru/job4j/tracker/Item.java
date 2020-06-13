@@ -14,6 +14,6 @@ public class Item {
     public static void main(String[] args) {
         Item item = new Item();
         Item onlyName = new Item("Filipp");
-        Item nameAndId = new Item("Filipp", 28);
+        Item nameAndId = new Item("Filipp", "28");
     }
 }
