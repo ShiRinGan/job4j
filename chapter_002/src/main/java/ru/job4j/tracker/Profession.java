@@ -7,7 +7,7 @@ public class Profession {
     private String birthday;
 
     public String getName() {
-        return this.name;
+        return name;
     }
 
     public String getSurname() {
